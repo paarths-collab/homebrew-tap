@@ -5,20 +5,20 @@
 class Killport < Formula
   desc "Lightning-fast, AI-agent optimized port killer."
   homepage "https://github.com/paarths-collab/killport"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/paarths-collab/killport/releases/download/v1.0.2/killport_1.0.2_darwin_amd64.tar.gz"
-      sha256 "31ff1d44c9a820936ed07dbeff720e5d36fbd367f3db83fb8c52ea0151b37c66"
+      url "https://github.com/paarths-collab/killport/releases/download/v1.0.3/killport_1.0.3_darwin_amd64.tar.gz"
+      sha256 "a7612b32d32f4c587d56bf0cd7489a01cd9a61db4b22e7ce0c0cc2f5454f7073"
 
       define_method(:install) do
         bin.install "killport"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/paarths-collab/killport/releases/download/v1.0.2/killport_1.0.2_darwin_arm64.tar.gz"
-      sha256 "0669f6637b33f828e6df8d9fffd994d50204fdd393433cac555874405c348d62"
+      url "https://github.com/paarths-collab/killport/releases/download/v1.0.3/killport_1.0.3_darwin_arm64.tar.gz"
+      sha256 "594b5054520906f74ff6a2403dbfa0845b5bb83c586a89dea6cbf605305b9e86"
 
       define_method(:install) do
         bin.install "killport"
@@ -28,15 +28,15 @@ class Killport < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paarths-collab/killport/releases/download/v1.0.2/killport_1.0.2_linux_amd64.tar.gz"
-      sha256 "0da61e908a1ba97b73f989406f8d38bdb207638ded417f7b072ee4ade68069b9"
+      url "https://github.com/paarths-collab/killport/releases/download/v1.0.3/killport_1.0.3_linux_amd64.tar.gz"
+      sha256 "0fbe107e3770472e8fe7a60e632859995658b4716cdcbcce186440cff78b3d49"
       define_method(:install) do
         bin.install "killport"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paarths-collab/killport/releases/download/v1.0.2/killport_1.0.2_linux_arm64.tar.gz"
-      sha256 "2cf289e563bc392299bb069cc831ad04e8cc2332b8e61eb49ee25680d78e57a4"
+      url "https://github.com/paarths-collab/killport/releases/download/v1.0.3/killport_1.0.3_linux_arm64.tar.gz"
+      sha256 "9bb3694f3aed5b300cc14b468e700b1cfc2675d1de1c8f73dbc40b2b25337bc0"
       define_method(:install) do
         bin.install "killport"
       end

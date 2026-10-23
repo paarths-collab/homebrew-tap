@@ -37,3 +37,5 @@ resolves package selection; both projects still install an executable named
 
 See Homebrew's [tap trust documentation](https://docs.brew.sh/Tap-Trust) and
 [formula alias documentation](https://docs.brew.sh/Formula-Cookbook#a-quick-word-on-naming).
+
+Packages v1.2.1 and later include the [MIT license](https://github.com/paarths-collab/killport/blob/v1.2.1/LICENSE). Historical releases retain their original license files.

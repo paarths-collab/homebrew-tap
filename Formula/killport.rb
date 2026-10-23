@@ -2,27 +2,28 @@
 class Killport < Formula
   desc "Inspect and free local ports with JSON output and identity-bound plans"
   homepage "https://github.com/paarths-collab/killport"
-  version "1.2.0"
+  version "1.2.1"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paarths-collab/killport/releases/download/v1.2.0/killport_1.2.0_darwin_amd64.tar.gz"
-      sha256 "d4ee3e20229732fb9be56cf0b7495f17485bf86085386a309b5a061d6bd67ede"
+      url "https://github.com/paarths-collab/killport/releases/download/v1.2.1/killport_1.2.1_darwin_amd64.tar.gz"
+      sha256 "03d959f3ca9479cd087bb7c4dcc7051bcae0a0c395437239a436a3b900d31efd"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paarths-collab/killport/releases/download/v1.2.0/killport_1.2.0_darwin_arm64.tar.gz"
-      sha256 "3b3a1d99508fb563f43ac01b813e565bf42a23aa8b542758a6442889a6545873"
+      url "https://github.com/paarths-collab/killport/releases/download/v1.2.1/killport_1.2.1_darwin_arm64.tar.gz"
+      sha256 "7e2f0d48389ff85845a3184cb15b0125263b8abcf5421c6ace22915f5b4038f3"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paarths-collab/killport/releases/download/v1.2.0/killport_1.2.0_linux_amd64.tar.gz"
-      sha256 "00b91347317c1d437e7002e7a973eb23f5ddb4208ab1d1b0b5c72b628a8e2026"
+      url "https://github.com/paarths-collab/killport/releases/download/v1.2.1/killport_1.2.1_linux_amd64.tar.gz"
+      sha256 "4d9715c3853db336a40bdad5c564d87c14f8095dd3cdf85fb6493e4b6dd8cc79"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paarths-collab/killport/releases/download/v1.2.0/killport_1.2.0_linux_arm64.tar.gz"
-      sha256 "b3b69f8d749bf1aef3a32e966b39082c1602d3597048b0aeb525bfc8921c09b0"
+      url "https://github.com/paarths-collab/killport/releases/download/v1.2.1/killport_1.2.1_linux_arm64.tar.gz"
+      sha256 "0be4f3fbee1727d2950a6dc6ca528293fe66391179aeca9bfd601aaa3ead79d3"
     end
   end
 
